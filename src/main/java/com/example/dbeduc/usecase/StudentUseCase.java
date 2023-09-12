@@ -1,6 +1,6 @@
 package com.example.dbeduc.usecase;
 
-import com.example.dbeduc.core.config.UseCaseConfig;
+import com.example.dbeduc.core.mapper.StudentMapper;
 import com.example.dbeduc.domain.model.Student;
 import com.example.dbeduc.infrastructure.data.JdbcStudentDataSource;
 import com.example.dbeduc.usecase.request.StudentRequest;
@@ -14,9 +14,9 @@ import java.util.List;
 public class StudentUseCase {
 
 	private final JdbcStudentDataSource studentDataSource;
-	private final UseCaseConfig.StudentMapper studentMapper;
+	private final StudentMapper studentMapper;
 
-	public StudentUseCase(JdbcStudentDataSource studentDataSource, UseCaseConfig.StudentMapper studentMapper) {
+	public StudentUseCase(JdbcStudentDataSource studentDataSource, StudentMapper studentMapper) {
 		this.studentDataSource = studentDataSource;
 		this.studentMapper = studentMapper;
 	}

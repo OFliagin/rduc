@@ -1,6 +1,4 @@
 
-create schema if not exists TESTDB;
-
 
 CREATE SEQUENCE teachers_seq START WITH 1 INCREMENT BY 50;
 
